@@ -1,6 +1,6 @@
-//META{"name":"AntiBlockedMessages","displayName":"AntiBlockedMessages","website":"https://istethys.weebly.com","source":"https://istethys.weebly.com"}*//
+//META{"name":"AntiBlockedMessages2","displayName":"AntiBlockedMessages2","website":"https://istethys.weebly.com","source":"https://istethys.weebly.com"}*//
 
-class AntiBlockedMessages {
+class AntiBlockedMessages2 {
 
 	// Contrsuctor
 	constructor () {
@@ -12,8 +12,8 @@ class AntiBlockedMessages {
 	}
 
 	// Meta
-	getName () {return "AntiBlockedMessages";}
-	getShortName() {return "ABM";}
+	getName () {return "AntiBlockedMessages2";}
+	getShortName() {return "ABM2";}
 	getVersion () {return "0.5.1";}
 	getAuthor () {return "IsTethys";}
 	getDescription () {return "Hides blocked user messages for real!";}
@@ -69,8 +69,11 @@ class AntiBlockedMessages {
 
 	//  Initialize
     initialize() {
-        this.initialized = true;
+		
+        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), "https://github.com/istethys/BetterDiscordAddons/blob/master/beta/AntiBlockedMessages2.plugin.js");
+		
 		this.initConstructor();
+		
         PluginUtilities.showToast(this.getName() + " " + this.getVersion() + " has started.");
     }
 

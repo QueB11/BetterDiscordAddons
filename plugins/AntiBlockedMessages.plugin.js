@@ -1,4 +1,4 @@
-//META{"name":"AntiBlockedMessages","displayName":"AntiBlockedMessages","website":"https://istethys.weebly.com","source":"https://istethys.weebly.com"}*//
+//META{"name":"AntiBlockedMessages","displayName":"AntiBlockedMessages","website":"https://istethys.weebly.com","source":"https://github.com/istethys/BetterDiscordAddons/blob/master/plugins/AntiBlockedMessages.plugin.js"}*//
 var AntiBlockedMessages = (() => {
 const buildPlugin = ([Plugin, Api]) => {
 	
@@ -76,7 +76,7 @@ const buildPlugin = ([Plugin, Api]) => {
 
 			//  Initialize
 			initialize() {
-				ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), "LINK_TO_RAW_CODE");
+				ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), "https://github.com/istethys/BetterDiscordAddons/blob/master/plugins/AntiBlockedMessages.plugin.js");
 				this.initialized = true;
 				PluginUtilities.showToast(this.getName() + " " + this.getVersion() + " has started.");
 			}
